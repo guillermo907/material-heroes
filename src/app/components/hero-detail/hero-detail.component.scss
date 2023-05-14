@@ -1,0 +1,22 @@
+:host {
+  padding: 15px;
+  background: var(--primary);
+  color: white;
+  border-radius: 7px;
+}
+:host:nth-of-type(odd) {
+  background-color: var(--accent);
+  color: white;
+}
+.action-section {
+  display: flex;
+  gap: 0.5rem;
+}
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.field.actions {
+  align-self: flex-end;
+}

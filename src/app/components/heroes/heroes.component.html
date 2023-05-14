@@ -1,0 +1,10 @@
+<div class="heroes">
+  <app-hero-detail
+    class="box-shadow"
+    *ngFor="let hero of heroes"
+    [hero]="hero"
+    [selected]="hero === selectedHero"
+    (toggleHero)="onToggleSelect(hero)"
+    (selectHero)="onSelectHero(hero, false)"
+  ></app-hero-detail>
+</div>

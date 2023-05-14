@@ -1,0 +1,45 @@
+<div class="hero-card" *ngIf="hero" [class.selected]="selected">
+  <div class="field actions">
+    <button mat-button (click)="onToggleHeroDetails($event)">
+      {{ selected ? "close" : "expand" }}
+    </button>
+  </div>
+  <div class="field">
+    <h2>
+      {{ hero.name }}
+    </h2>
+  </div>
+
+  <div class="field">
+    <label>Hero ID:</label>
+    {{ hero.id }}
+  </div>
+  <div class="hero-detail" *ngIf="selected">
+    <mat-card>
+      <mat-card-content>
+        <div class="field">
+          <mat-form-field class="example-full-width">
+            <mat-label>Hero name</mat-label>
+            <input
+              matInput
+              [(ngModel)]="hero.name"
+              placeholder="name"
+              value="Sushi"
+            />
+          </mat-form-field>
+        </div>
+        <div class="action-section">
+          <button mat-fab (click)="onToggleHeroDetails($event)" color="primary">
+            Go!
+          </button>
+          <button mat-fab (click)="onToggleHeroDetails($event)" color="accent">
+            Go!
+          </button>
+          <button mat-fab (click)="onToggleHeroDetails($event)" color="warn">
+            Go!
+          </button>
+        </div></mat-card-content
+      >
+    </mat-card>
+  </div>
+</div>

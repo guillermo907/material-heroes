@@ -1,0 +1,11 @@
+<div *ngIf="user" class="user-card">
+  <div class="field">
+    {{ user.name.first }}
+  </div>
+  <div class="field">
+    {{ user.email }}
+  </div>
+  <div class="field">
+    <img [src]="user.picture.large" />
+  </div>
+</div>

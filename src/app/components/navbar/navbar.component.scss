@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right {
+    display: flex;
+  }
+  button {
+    font-size: 18px;
+  }
+  .toggle {
+    margin-right: 2rem;
+    align-self: center;
+  }
+}

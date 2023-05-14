@@ -1,0 +1,21 @@
+.main-container {
+  height: 100%;
+}
+.main-container::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    -225deg,
+    rgba(255, 255, 255, 0.233),
+    transparent,
+    var(--primary)
+  );
+  background-size: 180%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

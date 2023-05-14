@@ -1,0 +1,15 @@
+<mat-toolbar class="navbar" color="primary">
+  <button mat-button routerLink="/">Icon</button>
+  <div class="right">
+    <mat-slide-toggle
+      class="toggle"
+      color="accent"
+      [(ngModel)]="darkMode"
+      (click)="onToggleClick()"
+    >
+      <app-dark-icon [darkMode]="darkMode"></app-dark-icon>
+    </mat-slide-toggle>
+    <button mat-button routerLink="/heroes">Heroes</button>
+    <button mat-button routerLink="/users">Users</button>
+  </div>
+</mat-toolbar>
